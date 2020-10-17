@@ -94,7 +94,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     // DB connected successfully
     console.log('DB connection successful')
 
-    app.listen(process.env.port || port, () => {
+    app.listen(process.env.PORT || port, () => {
       console.log(`Biscoff Bakery app listening on port: ${port}`)
     })
   })
